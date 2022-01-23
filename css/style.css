@@ -1,0 +1,29 @@
+nav ul.fstul {
+    display: flex;
+}
+
+ul {
+    list-style: none;
+}
+
+
+li a {
+    text-decoration: none;
+    padding: 0px 10px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: cyan;
+}
+
+nav>ul>li:hover>.dropdown {
+    display: block;
+}
+
+nav>ul>li:hover>.dropdown.mega-menu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 2em;
+}
